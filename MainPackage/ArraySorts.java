@@ -7,7 +7,7 @@ public class ArraySorts extends ArrayActions{
 	static Scanner in = new Scanner(System.in);
 		
 	static int[] ChoiseArraySort(int[] SomeArray) {
-		System.out.println("Выберите способ сортировки: \r1.'Пузырьком. [Oo]'\r2.'Вставками. [->|<-]'\r3.'Ещё-один.' [~]");
+		System.out.println("Выберите способ сортировки: \r1.'Пузырьком. [Oo]'\r2.'Вставками. [->|<-]'\r3.'Ещё-один.[~]'\r4.Остортировать массив строк. ");
 		int bob = in.nextInt();
 		switch(bob) {
 			case 1:
@@ -69,5 +69,19 @@ public class ArraySorts extends ArrayActions{
 		System.out.println("Массив отсортирован 'Каким-то странным и не эффективным ручным методом...'. [~]");
 		return SomeArray;
 	}
+	
+	static String[] StringArraySort(String[] SomeArray) {
+        for (int i = 0; i < SomeArray.length - 1; i++) {
+            for (int j = 0; j < SomeArray.length - i - 1; j++) {
+                if (SomeArray[j].compareTo(SomeArray[j+1]) > 0) {
+                    String Pstr = SomeArray[j];
+                    SomeArray[j] = SomeArray[j+1];
+                    SomeArray[j+1] = Pstr;
+                }
+            }
+        }
+		System.out.println("Строковый массив отсортирован!");
+        return SomeArray;
+    }
 	
 }

@@ -2,6 +2,7 @@ package MainPackage;
 
 public class ArrayEditor extends ArraySorts{
 
+	//Int Array----------------------------------------------------------------------------
 	static int[] CreateArray() {
 		System.out.println("Введите размерность массива:");
 		int arrCount = in.nextInt();
@@ -18,7 +19,25 @@ public class ArrayEditor extends ArraySorts{
 		System.out.println("Массив создан! <3");	
 		return SomeArray;
 	}
-
+	
+	//String Array--------------------------------------------------------------------------
+	static String[] CreateSArray() {
+		System.out.println("Введите размерность массива:");
+		int arrCount = in.nextInt();
+		String[] SomeArray = new String[arrCount+1];	
+		return SomeArray;
+	}
+	
+	static String[] FillArray(String[] SomeArray) {
+		System.out.println("Введите " + (SomeArray.length-1) + " строк:");
+		
+		for(int i = 0; i< SomeArray.length; i++) {
+			SomeArray[i] = in.nextLine();
+		}	
+		System.out.println("Массив создан! <3");	
+		return SomeArray;
+	}
+	//--------------------------------------------------------------------------
 	static int[] ClearArray(int[] SomeArray) {
 		for(int i = 0; i< SomeArray.length; i++)
 			SomeArray[i] = 0;
