@@ -1,4 +1,4 @@
-package MainPackage;
+ï»¿package MainPackage;
 
 public class Outputer extends ArrayEditor{
 
@@ -6,7 +6,7 @@ public class Outputer extends ArrayEditor{
 		boolean program = false;
 		int[] Array = new int[0];
 		while(!program) {
-			System.out.println("Âûáåðèòå äåéñòâèå: \r1.Çàäàòü ìàññèâ.\r2.Îòñîðòèðîâàòü ìàññèâ.\r3.Ïåðåìåøàòü ìàññèâ.\r4.Ïîêàçàòü ìèíèìàëüíîå çíà÷åíèå ìàññèâà.\r5.Ïîêàçàòü ìàêñèìàëüíîå çíà÷åíèå ìàññèâà.\r6.Âûâåñòè îïðåäåëåííîå ÷èñëî.\r7.Î÷èñòèòü ìàññèâ.\r8.Ñãåíåðèðîâàòü ìàññèâ.\r9.Ïîêàçàòü ñîäåðæèìîå ìàññèâà.\r0.Çàêîí÷èòü.\r\r\r:3\r\r");
+			System.out.println("Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ðµ: \r1.Ð—Ð°Ð´Ð°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð².\r2.ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð².\r3.ÐŸÐµÑ€ÐµÐ¼ÐµÑˆÐ°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð².\r4.ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°.\r5.ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°.\r6.Ð’Ñ‹Ð²ÐµÑÑ‚Ð¸ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾.\r7.ÐžÑ‡Ð¸ÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð².\r8.Ð¡Ð³ÐµÐ½ÐµÑ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð².\r9.ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÑŒ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°.\r0.Ð—Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ.\r\r\r:3\r\r");
 			int choise = in.nextInt();
 			System.out.println(choise);
 			if(Array.length > 1 || (choise == 1 || choise == 0 || choise == 8))
@@ -22,9 +22,9 @@ public class Outputer extends ArrayEditor{
 				case 5: FindMinMaxValueOnArray(Array, false); //false - max value
 					break;
 				case 6: 
-					System.out.println("Âûáåðèòå ñïîñîá ïîèñêà:\r1.Ñòàíäàðòíûé.\r2.Áèíàðíûé ïîèñê.");
+					System.out.println("Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿Ð¾ÑÐ¾Ð± Ð¿Ð¾Ð¸ÑÐºÐ°:\r1.Ð¡Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹.\r2.Ð‘Ð¸Ð½Ð°Ñ€Ð½Ñ‹Ð¹ Ð¿Ð¾Ð¸ÑÐº.");
 					int mFind = in.nextInt();
-					System.out.println("Ââåäèòå ÷èñëî êîòîðîå æåëàåòå íàéòè:");
+					System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ðµ Ð¶ÐµÐ»Ð°ÐµÑ‚Ðµ Ð½Ð°Ð¹Ñ‚Ð¸:");
 					int CurValue = in.nextInt();
 					switch(mFind) {
 						case 1:
@@ -41,15 +41,15 @@ public class Outputer extends ArrayEditor{
 					break;
 				case 9: OutputInfo(Array); //Show Array
 					break;
-				case 0: System.out.println("Ïîêà)"); program = !program; //Exit while
+				case 0: System.out.println("ÐŸÐ¾ÐºÐ°)"); program = !program; //Exit while
 					break;
 			}
-			else System.out.println("Ñíà÷àëà çàäàéòå ìàññèâ! >_< \r");
+			else System.out.println("Ð¡Ð½Ð°Ñ‡Ð°Ð»Ð° Ð·Ð°Ð´Ð°Ð¹Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²! >_< \r");
 		}
 	}
 	
 	static void OutputInfo(int[] SomeArray) {
-		System.out.println("\rÑîäåðæèìîå ìàññèâà: ");
+		System.out.println("\rÐ¡Ð¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ");
 		for(int i = 0; i< SomeArray.length; i++) {
 			System.out.println(SomeArray[i]);
 		}

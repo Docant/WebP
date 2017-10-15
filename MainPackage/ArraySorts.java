@@ -1,4 +1,4 @@
-package MainPackage;
+ï»¿package MainPackage;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class ArraySorts extends ArrayActions{
 	static Scanner in = new Scanner(System.in);
 		
 	static int[] ChoiseArraySort(int[] SomeArray) {
-		System.out.println("Âûáåðèòå ñïîñîá ñîðòèðîâêè: \r1.'Ïóçûðüêîì. [Oo]'\r2.'Âñòàâêàìè. [->|<-]'\r3.'Åù¸-îäèí.' [~]");
+		System.out.println("Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÑÐ¿Ð¾ÑÐ¾Ð± ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸: \r1.'ÐŸÑƒÐ·Ñ‹Ñ€ÑŒÐºÐ¾Ð¼. [Oo]'\r2.'Ð’ÑÑ‚Ð°Ð²ÐºÐ°Ð¼Ð¸. [->|<-]'\r3.'Ð•Ñ‰Ñ‘-Ð¾Ð´Ð¸Ð½.' [~]");
 		int bob = in.nextInt();
 		switch(bob) {
 			case 1:
@@ -33,7 +33,7 @@ public class ArraySorts extends ArrayActions{
 				}
 			}
 		}
-		System.out.println("Ìàññèâ îòñîðòèðîâàí 'Ïóçûðüêîì'. [Oo]");
+		System.out.println("ÐœÐ°ÑÑÐ¸Ð² Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½ 'ÐŸÑƒÐ·Ñ‹Ñ€ÑŒÐºÐ¾Ð¼'. [Oo]");
 		return SomeArray;
 	}
 	
@@ -49,7 +49,7 @@ public class ArraySorts extends ArrayActions{
 				}
 			}
 		}
-		System.out.println("Ìàññèâ îòñîðòèðîâàí 'Âñòàâêîé'. [->|<-]");
+		System.out.println("ÐœÐ°ÑÑÐ¸Ð² Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½ 'Ð’ÑÑ‚Ð°Ð²ÐºÐ¾Ð¹'. [->|<-]");
 		return SomeArray;
 	}
 	
@@ -66,7 +66,7 @@ public class ArraySorts extends ArrayActions{
 			}
 		}
 		
-		System.out.println("Ìàññèâ îòñîðòèðîâàí 'Êàêèì-òî ñòðàííûì è íå ýôôåêòèâíûì ðó÷íûì ìåòîäîì...'. [~]");
+		System.out.println("ÐœÐ°ÑÑÐ¸Ð² Ð¾Ñ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ð½ 'ÐšÐ°ÐºÐ¸Ð¼-Ñ‚Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð½Ñ‹Ð¼ Ð¸ Ð½Ðµ ÑÑ„Ñ„ÐµÐºÑ‚Ð¸Ð²Ð½Ñ‹Ð¼ Ñ€ÑƒÑ‡Ð½Ñ‹Ð¼ Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð¼...'. [~]");
 		return SomeArray;
 	}
 	

@@ -1,4 +1,4 @@
-package MainPackage;
+﻿package MainPackage;
 
 public class MainClass extends Outputer{
 

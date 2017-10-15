@@ -1,4 +1,4 @@
-package MainPackage;
+п»їpackage MainPackage;
 
 public class ArrayActions {
 	
@@ -17,9 +17,9 @@ public class ArrayActions {
 				}
 		}
 		if(minMax)
-			System.out.println("Минимальное значение массива: " + result + ", его индекс: " + index + ". <-");
+			System.out.println("РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР°: " + result + ", РµРіРѕ РёРЅРґРµРєСЃ: " + index + ". <-");
 		else
-			System.out.println("Максимальное значение массива: " + result + ", его индекс: " + index + ". ->");
+			System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РјР°СЃСЃРёРІР°: " + result + ", РµРіРѕ РёРЅРґРµРєСЃ: " + index + ". ->");
 		return result;
 	}
 
@@ -27,13 +27,13 @@ public class ArrayActions {
 		boolean find = false;
 			for(int i = 0; i < SomeArray.length; i++) {
 				if(SomeArray[i] == val) {
-					System.out.println("\r\r\r\rЧисло: " + SomeArray[i] + " найдено, его индекс в массиве: " + i + ".\r\r\r");
+					System.out.println("\r\r\r\rР§РёСЃР»Рѕ: " + SomeArray[i] + " РЅР°Р№РґРµРЅРѕ, РµРіРѕ РёРЅРґРµРєСЃ РІ РјР°СЃСЃРёРІРµ: " + i + ".\r\r\r");
 					find = !find;
 					break;
 				}
 			}
 			if(!find)
-				System.out.println("\r\r\r\rТакого числа в массиве нет. Повторите попытку.\r\r\r\r");
+				System.out.println("\r\r\r\rРўР°РєРѕРіРѕ С‡РёСЃР»Р° РІ РјР°СЃСЃРёРІРµ РЅРµС‚. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ.\r\r\r\r");
 	}
 	
 	static void BinaryValueFinder(int[] SomeArray, int val) {
@@ -51,6 +51,6 @@ public class ArrayActions {
 						stt = mid + 1;
 				}
 			}
-			System.out.println("\r\r\r\rЧисло: " + SomeArray[res] + " найдено, его индекс в массиве: " + res + ".\r\r\r");
+			System.out.println("\r\r\r\rР§РёСЃР»Рѕ: " + SomeArray[res] + " РЅР°Р№РґРµРЅРѕ, РµРіРѕ РёРЅРґРµРєСЃ РІ РјР°СЃСЃРёРІРµ: " + res + ".\r\r\r");
 	}
 }
