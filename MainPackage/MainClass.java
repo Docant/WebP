@@ -1,7 +1,5 @@
 package MainPackage;
 
-import java.util.Scanner;
-
 public class MainClass extends Outputer{
 
 	public static void main(String[] arg) {
@@ -15,9 +13,7 @@ public class MainClass extends Outputer{
 
 	static boolean OutputMainMenu(boolean prgrm) {
 
-		Scanner on = new Scanner(System.in);
-		int choise = on.nextInt();
-		
+		int choise = in.nextInt();
 			switch(choise) {
 				case 1: MainOutput();
 					break;

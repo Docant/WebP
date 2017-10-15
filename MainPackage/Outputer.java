@@ -22,9 +22,9 @@ public class Outputer extends ArrayEditor{
 				case 5: FindMinMaxValueOnArray(Array, false); //false - max value
 					break;
 				case 6: 
-					System.out.println("Выберите способ поиска:");
+					System.out.println("Выберите способ поиска:\r1.Стандартный.\r2.Бинарный поиск.");
 					int mFind = in.nextInt();
-					System.out.println("Введите число которое желаете найти:\r1.Стандартный.\r1.Бинарный поиск.");
+					System.out.println("Введите число которое желаете найти:");
 					int CurValue = in.nextInt();
 					switch(mFind) {
 						case 1:

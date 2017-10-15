@@ -36,9 +36,21 @@ public class ArrayActions {
 				System.out.println("\r\r\r\rТакого числа в массиве нет. Повторите попытку.\r\r\r\r");
 	}
 	
-	static int BinaryValueFinder(int[] SomeArray, int val) {
-		System.out.println("vob");
-		return val;
+	static void BinaryValueFinder(int[] SomeArray, int val) {
+		int res = 0;
+			int stt = 0, end = SomeArray.length, mid;
+			while (stt < end) {
+				mid = (stt + end)/2; 
+				if (val == SomeArray[mid]) {
+					res = mid;
+					break;
+				} else {
+					if (val < SomeArray[mid]) 
+						end = mid;
+					else 
+						stt = mid + 1;
+				}
+			}
+			System.out.println("\r\r\r\rЧисло: " + SomeArray[res] + " найдено, его индекс в массиве: " + res + ".\r\r\r");
 	}
-	
 }
