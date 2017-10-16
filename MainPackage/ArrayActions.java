@@ -17,9 +17,9 @@ public class ArrayActions {
 				}
 		}
 		if(minMax)
-			System.out.println("Минимальное значение массива: " + result + ", его индекс: " + index + ". <-");
+			System.out.println("Min value of array: " + result + ", its index: " + index + ". <-");
 		else
-			System.out.println("Максимальное значение массива: " + result + ", его индекс: " + index + ". ->");
+			System.out.println("Max value of array: " + result + ", its index: " + index + ". ->");
 		return result;
 	}
 
@@ -27,13 +27,13 @@ public class ArrayActions {
 		boolean find = false;
 			for(int i = 0; i < SomeArray.length; i++) {
 				if(SomeArray[i] == val) {
-					System.out.println("\r\r\r\rЧисло: " + SomeArray[i] + " найдено, его индекс в массиве: " + i + ".\r\r\r");
+					System.out.println("\r\r\r\rValue: " + SomeArray[i] + " finded, its index: " + i + ".\r\r\r");
 					find = !find;
 					break;
 				}
 			}
 			if(!find)
-				System.out.println("\r\r\r\rТакого числа в массиве нет. Повторите попытку.\r\r\r\r");
+				System.out.println("\r\r\r\rТакого значения не существует. Retry.\r\r\r\r");
 	}
 	
 	static void BinaryValueFinder(int[] SomeArray, int val) {
@@ -51,6 +51,6 @@ public class ArrayActions {
 						stt = mid + 1;
 				}
 			}
-			System.out.println("\r\r\r\rЧисло: " + SomeArray[res] + " найдено, его индекс в массиве: " + res + ".\r\r\r");
+			System.out.println("\r\r\r\rValue: " + SomeArray[res] + " finded, its index: " + res + ".\r\r\r");
 	}
 }

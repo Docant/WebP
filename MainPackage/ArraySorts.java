@@ -7,7 +7,7 @@ public class ArraySorts extends ArrayActions{
 	static Scanner in = new Scanner(System.in);
 		
 	static int[] ChoiseArraySort(int[] SomeArray) {
-		System.out.println("Выберите способ сортировки: \r1.'Пузырьком. [Oo]'\r2.'Вставками. [->|<-]'\r3.'Ещё-один.[~]'\r4.Остортировать массив строк. ");
+		System.out.println("Select a sorting method: \r1.'Bubble. [Oo]'\r2.'Inserts. [->|<-]'\r3.'Some method.[~]'\r4.String the string array. ");
 		int bob = in.nextInt();
 		switch(bob) {
 			case 1:
@@ -33,7 +33,7 @@ public class ArraySorts extends ArrayActions{
 				}
 			}
 		}
-		System.out.println("Массив отсортирован 'Пузырьком'. [Oo]");
+		System.out.println("Array has been sorted by 'Bubble'. [Oo]");
 		return SomeArray;
 	}
 	
@@ -49,7 +49,7 @@ public class ArraySorts extends ArrayActions{
 				}
 			}
 		}
-		System.out.println("Массив отсортирован 'Вставкой'. [->|<-]");
+		System.out.println("Array has been sorted by 'Inserts'. [->|<-]");
 		return SomeArray;
 	}
 	
@@ -66,7 +66,7 @@ public class ArraySorts extends ArrayActions{
 			}
 		}
 		
-		System.out.println("Массив отсортирован 'Каким-то странным и не эффективным ручным методом...'. [~]");
+		System.out.println("Array has been sorted by 'Some method'. [~]");
 		return SomeArray;
 	}
 	
@@ -80,7 +80,7 @@ public class ArraySorts extends ArrayActions{
                 }
             }
         }
-		System.out.println("Строковый массив отсортирован!");
+		System.out.println("String array has been sorted!");
         return SomeArray;
     }
 	

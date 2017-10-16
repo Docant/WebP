@@ -7,7 +7,7 @@ public class Outputer extends ArrayEditor{
 		int[] Array = new int[0];
 		String[] ArrayS = new String[0];
 		while(!program) {
-			System.out.println("Выберите действие: \r1.Задать массив.\r2.Отсортировать массив.\r3.Перемешать массив.\r4.Показать минимальное значение массива.\r5.Показать максимальное значение массива.\r6.Вывести определенное число.\r7.Очистить массив.\r8.Сгенерировать массив.\r9.Показать содержимое массива.\r10.Задать строковый массив\r11.Отсортировать строковый массив\r0.Закончить.\r\r\r:3\r\r");
+			System.out.println("Make choise: \r1.Make array.\r2.Sort array.\r3.Mix array.\r4.Show min value of array.\r5.Show max value of array.\r6.Find current value.\r7.Clear array.\r8.Generate array.\r9.Show array.\r10.Create string array.\r11.Sort string array\r0.Exit.\r\r\r:3\r\r");
 			int choise = in.nextInt();
 			System.out.println(choise);
 			if((Array.length > 1 || ArrayS.length > 1) || (choise == 1 || choise == 0 || choise == 8 || choise == 10))
@@ -23,9 +23,9 @@ public class Outputer extends ArrayEditor{
 				case 5: FindMinMaxValueOnArray(Array, false); //false - max value
 					break;
 				case 6: 
-					System.out.println("Выберите способ поиска:\r1.Стандартный.\r2.Бинарный поиск.");
+					System.out.println("Select sort method:\r1.Linear.\r2.Binary.");
 					int mFind = in.nextInt();
-					System.out.println("Введите число которое желаете найти:");
+					System.out.println("Enter the value that you want find:");
 					int CurValue = in.nextInt();
 					switch(mFind) {
 						case 1:
@@ -40,7 +40,7 @@ public class Outputer extends ArrayEditor{
 					break;
 				case 8: Array = GenerateArray(CreateArray());
 					break;
-				case 9: System.out.println("Выберите какой массив показать: \r1.Int Array\r2.String Array"); 
+				case 9: System.out.println("What's array u wanna see: \r1.Int Array\r2.String Array"); 
 						int ChVal = in.nextInt();
 						switch(ChVal) {
 							case 1:
@@ -58,19 +58,19 @@ public class Outputer extends ArrayEditor{
 				case 0: System.out.println("Пока)"); program = !program; //Exit while
 					break;
 			}
-			else System.out.println("Сначала задайте массив! >_< \r");
+			else System.out.println("Create array at first! >_< \r");
 		}
 	}
 	
 	static void OutputInfo(int[] SomeArray) {
-		System.out.println("\rСодержимое массива: ");
+		System.out.println("\rArray: ");
 		for(int i = 0; i< SomeArray.length; i++) {
 			System.out.println(SomeArray[i]);
 		}
 	}
 	
 	static void OutputInfo(String[] SomeArray) {
-		System.out.println("\rСодержимое массива: ");
+		System.out.println("\rString Array: ");
 		for(int i = 0; i< SomeArray.length; i++) {
 			System.out.println(SomeArray[i]);
 		}
