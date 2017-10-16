@@ -7,7 +7,7 @@ public class ArraySorts extends ArrayActions{
 	static Scanner in = new Scanner(System.in);
 		
 	static int[] ChoiseArraySort(int[] SomeArray) {
-		System.out.println("Select a sorting method: \r1.'Bubble. [Oo]'\r2.'Inserts. [->|<-]'\r3.'Some method.[~]'\r4.String the string array. ");
+		System.out.println("Select a sorting method: \r1.'Bubble. [Oo]'\r2.'Inserts. [->|<-]'\r3.'Some method.[~]'\r4. Sort the string array. ");
 		int bob = in.nextInt();
 		switch(bob) {
 			case 1:
@@ -55,7 +55,7 @@ public class ArraySorts extends ArrayActions{
 	
 	static int[] MySort(int[] SomeArray) {
 		for(int l = 0; l < SomeArray.length; l++) {
-			int b = 0;
+			int b = (-999999999);
 			for(int i = 0; i < SomeArray.length; i++) {
 				if(SomeArray[i] > b)
 					b = SomeArray[i];

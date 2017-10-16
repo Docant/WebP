@@ -5,7 +5,12 @@ public class ArrayEditor extends ArraySorts{
 	//Int Array----------------------------------------------------------------------------
 	static int[] CreateArray() {
 		System.out.println("Input the array size:");
-		int arrCount = in.nextInt();
+		int arrCount = 0;
+		try {
+			arrCount = in.nextInt();	
+		}catch(Exception e) {
+			System.out.println("Invalid value! \\(¤_¤)/");
+		}
 		int[] SomeArray = new int[arrCount];	
 		return SomeArray;
 	}
@@ -16,14 +21,19 @@ public class ArrayEditor extends ArraySorts{
 		for(int i = 0; i< SomeArray.length; i++) {
 			SomeArray[i] = in.nextInt();
 		}	
-		System.out.println("Массив создан! <3");	
+		System.out.println("Array has been created! <3");	
 		return SomeArray;
 	}
 	
 	//String Array--------------------------------------------------------------------------
 	static String[] CreateSArray() {
 		System.out.println("Input the array size:");
-		int arrCount = in.nextInt();
+		int arrCount = 0;
+		try {
+			arrCount = in.nextInt();	
+		}catch(Exception e) {
+			System.out.println("Invalid value! \\(¤_¤)/");
+		}
 		String[] SomeArray = new String[arrCount+1];	
 		return SomeArray;
 	}
@@ -57,7 +67,7 @@ public class ArrayEditor extends ArraySorts{
 	
 	static int[] GenerateArray(int[] SomeArray) {
 		int[] arrRange = new int[2];
-		System.out.println("Enter the value range of the array:\r(Через пробел.)");
+		System.out.println("Enter the value range of the array:\r(Through the space)");
 		
 		for(int i = 0; i< arrRange.length; i++)
 			arrRange[i] = in.nextInt();

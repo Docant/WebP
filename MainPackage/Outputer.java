@@ -43,11 +43,9 @@ public class Outputer extends ArrayEditor{
 				case 9: System.out.println("What's array u wanna see: \r1.Int Array\r2.String Array"); 
 						int ChVal = in.nextInt();
 						switch(ChVal) {
-							case 1:
-								if(Array.length > 1)OutputInfo(Array); //Show Array
+							case 1:OutputInfo(Array); //Show Array
 								break;
-							case 2:
-								if(ArrayS.length > 1)OutputInfo(ArrayS); //Show Array
+							case 2:OutputInfo(ArrayS); //Show Array
 								break;
 							}
 				break;
@@ -55,7 +53,7 @@ public class Outputer extends ArrayEditor{
 					break;
 				case 11: ArrayS = StringArraySort(ArrayS);
 					break;
-				case 0: System.out.println("Пока)"); program = !program; //Exit while
+				case 0: System.out.println("Bye)"); program = !program; //Exit while
 					break;
 			}
 			else System.out.println("Create array at first! >_< \r");
@@ -63,6 +61,10 @@ public class Outputer extends ArrayEditor{
 	}
 	
 	static void OutputInfo(int[] SomeArray) {
+		if(SomeArray.length < 1) {
+			System.out.println("\rArray is Empty :c");
+			return;
+		}
 		System.out.println("\rArray: ");
 		for(int i = 0; i< SomeArray.length; i++) {
 			System.out.println(SomeArray[i]);
@@ -70,6 +72,10 @@ public class Outputer extends ArrayEditor{
 	}
 	
 	static void OutputInfo(String[] SomeArray) {
+		if(SomeArray.length < 1) {
+			System.out.println("\rArray is Empty :c");
+			return;
+		}
 		System.out.println("\rString Array: ");
 		for(int i = 0; i< SomeArray.length; i++) {
 			System.out.println(SomeArray[i]);

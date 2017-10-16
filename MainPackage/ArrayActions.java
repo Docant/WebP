@@ -33,16 +33,18 @@ public class ArrayActions {
 				}
 			}
 			if(!find)
-				System.out.println("\r\r\r\rТакого значения не существует. Retry.\r\r\r\r");
+				System.out.println("\r\r\r\rCan't find this value. Retry.\r\r\r\r");
 	}
 	
 	static void BinaryValueFinder(int[] SomeArray, int val) {
 		int res = 0;
+		boolean finded = false;
 			int stt = 0, end = SomeArray.length, mid;
 			while (stt < end) {
 				mid = (stt + end)/2; 
 				if (val == SomeArray[mid]) {
 					res = mid;
+					finded = !finded;
 					break;
 				} else {
 					if (val < SomeArray[mid]) 
@@ -51,6 +53,9 @@ public class ArrayActions {
 						stt = mid + 1;
 				}
 			}
-			System.out.println("\r\r\r\rValue: " + SomeArray[res] + " finded, its index: " + res + ".\r\r\r");
+			if(finded)
+				System.out.println("\r\r\r\rValue: " + SomeArray[res] + " finded, its index: " + res + ".\r\r\r");
+			else
+				System.out.println("\r\rI can't find this value /(☼_☼)\\ \r\r");
 	}
 }
